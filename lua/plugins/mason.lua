@@ -1,0 +1,48 @@
+-- Customize Mason plugins
+
+---@type LazySpec
+return {
+  {
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
+    opts = {
+      ensure_installed = {
+        "lua-language-server",
+        "debugpy",
+        "tree-sitter-cli",
+        "bzl",
+        { "golangci-lint", auto_update = true },
+        "bash-language-server",
+        { "gopls", auto_update = true },
+        "lua-language-server",
+        "vim-language-server",
+        "stylua",
+        "shellcheck",
+        "editorconfig-checker",
+        "gofumpt",
+        "golines",
+        "buf",
+        "buf-language-server",
+        "gomodifytags",
+        "gotests",
+        "impl",
+        "json-to-struct",
+        "misspell",
+        "revive",
+        "shellcheck",
+        "shfmt",
+        "staticcheck",
+        "vint",
+        "svelte-language-server",
+        "rust-analyzer",
+        "ast-grep",
+        "go-debug-adapter",
+        { "delve", auto_update = true },
+        "gofumpt",
+        "codelldb",
+        "bazelrc-lsp",
+        "biome",
+        "templ",
+      },
+    },
+  },
+}
